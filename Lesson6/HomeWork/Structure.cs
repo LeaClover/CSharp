@@ -5,6 +5,10 @@ namespace GBhomework6
     class Structure
     {
         public int choice;
+
+        Text task41 = new();
+        Methods method = new();
+        Text task43 = new();
         
         public int count;
 
@@ -14,9 +18,7 @@ namespace GBhomework6
             {
                 if (n == 1)
                 {
-                    Text task41 = new();
                     task41.task1main();
-                    Methods method = new();
                     method.str = Console.ReadLine();
                     method.GetArrayFromString(method.str);
                     method.PrintArray(method.GetArrayFromString(method.str));
@@ -28,8 +30,17 @@ namespace GBhomework6
                 {
                     if (n == 2)
                     {
-                        Text task43 = new();
                         task43.task2main();
+                        task43.task2k1();
+                        method.k1 = Convert.ToInt32(Console.ReadLine());
+                        task43.task2b1();
+                        method.b1 = Convert.ToInt32(Console.ReadLine());
+                        task43.task2k2();
+                        method.k2 = Convert.ToInt32(Console.ReadLine());
+                        task43.task2b2();
+                        method.b2 = Convert.ToInt32(Console.ReadLine());
+                        task43.task2result(method.GetCommonPoint(method.k1, method.b1, method.k2, method.b2));
+
                     }
                 }
                 if (n != 2 && n != 1)
