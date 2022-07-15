@@ -4,40 +4,33 @@ namespace GBhomework6
 {
     class Methods
     {
-        public int choice;
-
-        public void GetChoice(int n)
+        public string? str;
+        public int [] GetArrayFromString(string str)
         {
-            try
+            int [] arrayS = Array.ConvertAll(str.Split(' '), int.Parse);
+            return arrayS;
+        }
+
+        public int [] PrintArray (int [] array)
+        {
+            for(int i = 0; i<array.Length; i++)
             {
-                if (n == 1)
+                Console.Write(array[i] + " | ");
+            }
+            return array;
+        }
+
+        public int GetCount (int [] array)
+        {
+            int count = 0;
+            for(int i = 0; i < array.Length; i++)
+            {
+                if(array[i]>0)
                 {
-                    Text task41 = new();
-                    task41.task1main();
-                }
-                else
-                {
-                    if (n == 2)
-                    {
-                        Text task43 = new();
-                        task43.task2main();
-                    }
-                }
-                if (n != 2 && n != 1)
-                {
-                    Text mistake = new();
-                    mistake.mistake();
-                    choice = Convert.ToInt32(Console.ReadLine());
-                    GetChoice(choice);
+                    count++;
                 }
             }
-            catch (System.Exception)
-            {
-                Text mistake = new();
-                mistake.mistake();
-                choice = Convert.ToInt32(Console.ReadLine());
-                GetChoice(choice);
-            }
+            return count;
         }
     }
 }
