@@ -33,9 +33,26 @@ namespace GBhomework6
             Console.WriteLine("y = k2 * x + b2");
         }
 
-        public void task2result()
+        public void task2k1()
         {
+            Console.WriteLine("Введите k1: ");
+        }
+        public void task2b1()
+        {
+            Console.WriteLine("Введите b1: ");
+        }
+        public void task2k2()
+        {
+            Console.WriteLine("Введите k2: ");
+        }
+        public void task2b2()
+        {
+            Console.WriteLine("Введите b2: ");
+        }
 
+        public void task2result(double [] array)
+        {
+            Console.WriteLine($"Точкой пересечения двух прямых является ({array[0]}, {array[1]})!");
         }
 
         public void mistake()
