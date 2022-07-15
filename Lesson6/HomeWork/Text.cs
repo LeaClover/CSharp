@@ -16,12 +16,12 @@ namespace GBhomework6
         {
             Console.Clear();
             Console.WriteLine("Вы выбрали первую задачу (Задача 41)!");
-            Console.WriteLine("Введите несколько положительных и несколько отрицательных чисел: ");
+            Console.WriteLine("Введите несколько положительных и несколько отрицательных чисел через пробел: ");
         }
 
-        public void task1result()
+        public void task1result(int N)
         {
-            Console.WriteLine($"Вы ввели M чисел больше 0!");
+            Console.Write($"Среди введенных чисел число положительных равно {N}");
         }
 
         public void task2main()
