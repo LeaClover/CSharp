@@ -20,10 +20,10 @@ namespace GBhomework6
         {
             Text first = new();
             first.maintext();
-            Methods choice = new();
-            Methods methodchoice = new();
+            Structure choice = new();
+            Structure dochoice = new();
             choice.choice = Convert.ToInt32(Console.ReadLine());
-            methodchoice.GetChoice(choice.choice);
+            dochoice.GetChoice(choice.choice);
             
             
 
