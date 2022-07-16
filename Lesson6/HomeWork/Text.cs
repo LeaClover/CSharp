@@ -52,7 +52,7 @@ namespace GBhomework6
 
         public void task2result(double [] array)
         {
-            Console.WriteLine($"Точкой пересечения двух прямых является ({array[0]}, {array[1]})!");
+            Console.WriteLine($"Точкой пересечения двух прямых является (x = {array[0]}, y = {array[1]})!");
         }
 
         public void mistake()
