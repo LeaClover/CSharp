@@ -16,17 +16,13 @@ namespace GBhomework6
 {
     class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             Text first = new();
             first.maintext();
             Structure choice = new();
-            Structure dochoice = new();
             choice.choice = Convert.ToInt32(Console.ReadLine());
-            dochoice.GetChoice(choice.choice);
-            
-            
-
+            choice.GetChoice(choice.choice);
         }
     }
 }
