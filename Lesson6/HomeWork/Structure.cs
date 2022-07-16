@@ -9,6 +9,7 @@ namespace GBhomework6
         Text task41 = new();
         Methods method = new();
         Text task43 = new();
+        Program program = new();
         
         public int count;
 
@@ -24,7 +25,7 @@ namespace GBhomework6
                     method.PrintArray(method.GetArrayFromString(method.str));
                     count = method.GetCount(method.GetArrayFromString(method.str)); 
                     Console.WriteLine();
-                    task41.task1result(count);            
+                    task41.task1result(count); 
                 }
                 else
                 {
