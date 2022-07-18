@@ -23,6 +23,7 @@ namespace GBhomework6
             Structure choice = new();
             choice.choice = Convert.ToInt32(Console.ReadLine());
             choice.GetChoice(choice.choice);
+            Main();
         }
     }
 }
